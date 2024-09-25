@@ -7,7 +7,8 @@ export default {
   theme: {
     colors:{
       'transparent-white': '#0a060f00',
-      'white': '#FFFFFF'
+      'white': '#FFFFFF',
+      'dark-purple': '#060A30'
     },
     fontFamily: {
       digital: ['"DigitalClockFont"', "sans-serif"],
@@ -15,4 +16,5 @@ export default {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }

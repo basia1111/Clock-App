@@ -13,10 +13,6 @@
 @tailwind utilities;
 
 
-@layer base {
-  
-    #root{
-        @apply h-screen w-screen flex items-center justify-center bg-[url('./assets/images/ain-5.png')] bg-cover bg-center ;
-    }
-  }
-
+*{
+  @apply transition-all duration-300
+}

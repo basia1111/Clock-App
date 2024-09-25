@@ -5,7 +5,7 @@ function CurrentDate(){
     const [date, setDate] = useState(new Date());
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return(
-        <div className='font-poppins text-white text-center sm:text-2xl  text-xl font-extralight'>
+        <div className='font-poppins text-dark-purple  dark:text-white text-center sm:text-2xl  text-xl font-extralight'>
             {date.toLocaleDateString("en-US", options)}
         </div>
     );

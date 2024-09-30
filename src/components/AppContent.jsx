@@ -4,6 +4,7 @@ import DarkModeSwitch from './DarkModeSwitch';
 import DigitalClock from './DigitalClock';
 import AnalogClock from './AnalogClock';
 import CurrentDate from './CurrentDate';
+import TimeZone from './TimeZone';
 
 function AppContent() {
     const { mode } = useContext(ModeContext);
@@ -16,6 +17,7 @@ function AppContent() {
                     <h1 className="font-poppins text-dark-purple dark:text-white text-4xl font-bold">React Clock</h1>
                     <AnalogClock />
                     <DigitalClock />
+                    <TimeZone />
                     <CurrentDate />
                 </div>
             </div>

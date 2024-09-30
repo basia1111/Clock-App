@@ -1,11 +1,15 @@
 import React from 'react';
 import ModeContextProvider from './context/ModeContextProvider.jsx';
-import AppContent from './components/AppContent.jsx'; // Create a separate file for this component
+import { TimeZoneOffsetContextProvider } from './context/TimeZoneOffsetContext.jsx';
+import AppContent from './components/AppContent.jsx';
 
 function App() {
     return (
+
         <ModeContextProvider>
-            <AppContent />
+            <TimeZoneOffsetContextProvider>
+                <AppContent />
+            </TimeZoneOffsetContextProvider>
         </ModeContextProvider>
     );
 }

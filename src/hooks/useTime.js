@@ -1,16 +1,21 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react';
+import { TimeZoneOffsetContext } from '../context/TimeZoneOffsetContext';
 
 export default function useTime(){
 
     const[time, setTime] = useState(new Date());
-
-    useEffect(() => {
+    const{timeZoneOffset} = useContext(TimeZoneOffsetContext);
+    
+   useEffect(() => {
         const interval = setInterval(() => {
-            setTime( t => new Date())
+            let currentOffset = new Date().getTimezoneOffset() * -60;
+            let currentTime =  new Date();
+            setTime(new Date(currentTime.getTime() + (timeZoneOffset - currentOffset) * 1000));
         }, 1000);
+        console.log('new timezone');
 
         return () => clearInterval(interval);
-    }, []);
+    },[timeZoneOffset]);
 
     return time;
 

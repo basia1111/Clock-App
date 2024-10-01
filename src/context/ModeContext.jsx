@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
-import ModeContext from './ModeContext.js'
+import React, {createContext, useState } from 'react'
 
+export const ModeContext = createContext();
 
-const ModeContextProvider = ({children}) => {
+export const ModeContextProvider = ({children}) => {
 
     const [mode, setMode] = useState(false)
 
@@ -13,5 +13,3 @@ const ModeContextProvider = ({children}) => {
     )
 
 }
-
-export default ModeContextProvider

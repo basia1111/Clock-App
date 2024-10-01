@@ -1,5 +1,5 @@
 import React from 'react';
-import ModeContextProvider from './context/ModeContextProvider.jsx';
+import { ModeContextProvider } from './context/ModeContext.jsx';
 import { TimeZoneOffsetContextProvider } from './context/TimeZoneOffsetContext.jsx';
 import AppContent from './components/AppContent.jsx';
 

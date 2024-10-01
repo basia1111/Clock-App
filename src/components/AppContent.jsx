@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import ModeContext from '../context/ModeContext';
+import {ModeContext} from '../context/ModeContext';
 import DarkModeSwitch from './DarkModeSwitch';
 import DigitalClock from './DigitalClock';
 import AnalogClock from './AnalogClock';

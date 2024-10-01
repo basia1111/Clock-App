@@ -48,8 +48,26 @@ function TimeZone() {
 
     return(
         <div>
-            <select onChange={changeTimeZone} value={currentTimeZone}>
-                <option value={Intl.DateTimeFormat().resolvedOptions().timeZone}>CurrentTimezone: {Intl.DateTimeFormat().resolvedOptions().timeZone}</option>
+            <select onChange={changeTimeZone} value={currentTimeZone} className ="
+                pr-10
+                pl-3
+                pt-3
+                pb-3
+                rounded-3xl
+                shadow-[inset_0_3px_10px_#484f88] 
+                dark:shadow-[inset_0_3px_10px_#344646] 
+                bg-dark-purple  /* Background color */
+                dark:bg-[#e1ecec]  /* Background color for dark mode */
+                text-white 
+                dark:text-[#070b32]
+                appearance-none
+                dark:bg-down-dark
+                bg-down-light
+                bg-no-repeat 
+                bg-custom-position 
+                bg-custom-size
+            ">
+                <option value={Intl.DateTimeFormat().resolvedOptions().timeZone}>Current Timezone: {Intl.DateTimeFormat().resolvedOptions().timeZone}</option>
                 {timeZoneList.map((t, index) => (
                     <option key={index} value={t}>
                         {t}

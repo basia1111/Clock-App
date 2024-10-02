@@ -1,6 +1,7 @@
 import React from 'react';
 import { ModeContextProvider } from './context/ModeContext.jsx';
 import { TimeZoneOffsetContextProvider } from './context/TimeZoneOffsetContext.jsx';
+import { LoadingContextProvider } from './context/LoadingContext.jsx';
 import AppContent from './components/AppContent.jsx';
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
 
         <ModeContextProvider>
             <TimeZoneOffsetContextProvider>
-                <AppContent />
+                <LoadingContextProvider>
+                    <AppContent />
+                </LoadingContextProvider>
             </TimeZoneOffsetContextProvider>
         </ModeContextProvider>
     );

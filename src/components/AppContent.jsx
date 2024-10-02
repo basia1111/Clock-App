@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import {ModeContext} from '../context/ModeContext';
 import DarkModeSwitch from './DarkModeSwitch';
-import DigitalClock from './DigitalClock';
-import AnalogClock from './AnalogClock';
+import Clocks from './Clocks';
 import CurrentDate from './CurrentDate';
 import TimeZone from './TimeZone';
 
@@ -15,8 +14,7 @@ function AppContent() {
                 <DarkModeSwitch />
                 <div className="w-11/12 lg:w-8/12 h-4/5 bg-transparent-white backdrop-blur-[30px] flex flex-col justify-around items-center rounded-3xl sm:p-10 p-5">
                     <h1 className="font-poppins text-dark-purple dark:text-white text-4xl font-bold">React Clock</h1>
-                    <AnalogClock />
-                    <DigitalClock />
+                    <Clocks />
                     <TimeZone />
                     <CurrentDate />
                 </div>

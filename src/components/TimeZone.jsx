@@ -22,7 +22,7 @@ function TimeZone() {
 
     const fetchTime = (newTimezone) => {
         setLoading(true);
-        fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=${API_KEY}&format=json&by=zone&zone=${newTimezone}`)
+        fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=${API_KEY}&format=json&by=zone&zone=${newTimezone}`)
             .then((response) => response.json())
             .then((data) => {
                 if (data && data.status === 'OK') {

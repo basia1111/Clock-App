@@ -1,4 +1,4 @@
-# React Clock Project - [Live demo]([https://pages.github.com/](https://timezoneclock-app.vercel.app/)
+# React Clock Project - [Live demo](https://timezoneclock-app.vercel.app/)
 
 This project is a clock application built with **React**, featuring both analog and digital clocks, dark/light mode support, and timezone adjustments. It uses **Vite** as the development environment and has been deployed on **Vercel**.
 

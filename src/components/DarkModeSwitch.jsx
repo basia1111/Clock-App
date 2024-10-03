@@ -1,5 +1,7 @@
 import {useContext} from 'react'
 import {ModeContext} from '../context/ModeContext.jsx'
+import sun from '../assets/images/sun.svg';
+import moon from '../assets/images/moon.svg';
 
 
 function DarkModeSwitch(){
@@ -16,7 +18,7 @@ function DarkModeSwitch(){
                 <div onClick={toggleMode} className={`w-[24px] h-[24px] p-1 rounded-full absolute transition-all duration-700 
                 ${ mode ?'right-[4px] bg-white rotate-[30deg] ' :'left-[4px] right-[100%]] bg-dark-purple rotate-0'}`}>
 
-                    {mode ? <img src="/src/assets/images/sun.svg" alt="Moon" /> : <img src="/src/assets/images/moon.svg" alt="Sun" />}
+                    {mode ? <img src={sun} /> : <img src={moon} />}
 
                 </div>
             </div>
